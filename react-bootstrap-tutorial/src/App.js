@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigation from "./components/Navigation";
+import { Container } from 'react-bootstrap';
+import SampleCarousel from './components/SampleCarousel';
+import SampleCardGroup from './components/CardGroup';
+import SampleJumbotron from './components/SampleJumbotron';
+import SampleForm from './components/SampleForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Navigation />
+      <SampleCarousel />
+      <SampleJumbotron />
+      <SampleCardGroup />
+      <SampleForm />
+    </Container>
   );
 }
 
