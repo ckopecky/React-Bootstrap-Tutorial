@@ -3,8 +3,8 @@ import { Form, Col, Row, Button } from 'react-bootstrap';
 
 const SampleForm = (props) => {
 	return (
-		<Form>
-			<Form.Label aria-label="contact" style={{ marginTop: '40px', fontSize: '1.6rem' }}>Contact Me!</Form.Label>
+		<Form className="sample-form">
+			<Form.Label className="sample-form-label" aria-label="contact">Contact Me!</Form.Label>
             <hr />
 			<Form.Group as={Row} controlId='formHorizontalEmail'>
 				<Form.Label column sm={2}>

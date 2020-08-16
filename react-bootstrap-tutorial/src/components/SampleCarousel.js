@@ -2,50 +2,49 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
 const SampleCarousel = (props) => {
+	//https://image.tmdb.org/t/p/original
+	console.log(props.movies[0])
 	return (
-		<Carousel>
-			<Carousel.Item>
+		<Carousel className="carousel-container">
+			<Carousel.Item className="carousel-item">
 				<img
 					className='d-block w-100'
-					src='https://via.placeholder.com/800x200?text=First slide&bg=373940/
-					C/O https://placeholder.com/'
-					alt='First slide'
+					src={`https://image.tmdb.org/t/p/original${props.movies[0].backdrop_path}`}
+					alt={props.movies[0].title}
 				/>
-				<Carousel.Caption>
-					<h3>First slide label</h3>
+				<Carousel.Caption className="overlay">
+					<h3>{props.movies[0].title}</h3>
 					<p>
-						Nulla vitae elit libero, a pharetra augue mollis
-						interdum.
+						{props.movies[0].overview}
 					</p>
 				</Carousel.Caption>
 			</Carousel.Item>
-			<Carousel.Item>
+			<Carousel.Item className="carousel-item">
 				<img
 					className='d-block w-100'
-					src='https://via.placeholder.com/800x200?text=Second slide&bg=282c34/'
+					src={`https://image.tmdb.org/t/p/original${props.movies[1].backdrop_path}`}
 
-					alt='Second slide'
+					alt={props.movies[1].title}
 				/>
 
-				<Carousel.Caption>
-					<h3>Second slide label</h3>
+				<Carousel.Caption className="overlay">
+					<h3>{props.movies[1].title}</h3>					
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						{props.movies[1].overview}
 					</p>
 				</Carousel.Caption>
 			</Carousel.Item>
-			<Carousel.Item>
+			<Carousel.Item className="carousel-item">
 				<img
 					className='d-block w-100'
-					src='https://via.placeholder.com/800x200?text=Third slide&bg=20232a'
-					alt='Third slide'
+					src={`https://image.tmdb.org/t/p/original${props.movies[2].backdrop_path}`}
+					alt={props.movies[2].title}
 				/>
 
-				<Carousel.Caption>
-					<h3>Third slide label</h3>
+				<Carousel.Caption className="overlay">
+					<h3>{props.movies[2].title}</h3>					
 					<p>
-						Praesent commodo cursus magna, vel scelerisque nisl
-						consectetur.
+						{props.movies[2].overview}
 					</p>
 				</Carousel.Caption>
 			</Carousel.Item>

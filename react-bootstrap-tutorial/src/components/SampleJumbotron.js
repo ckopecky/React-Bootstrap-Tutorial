@@ -2,11 +2,10 @@ import React from 'react';
 import { Jumbotron, Button } from 'react-bootstrap';
 const SampleJumbotron = () => {
 	return (
-		<Jumbotron style={{marginBottom: '0rem'}}>
-			<h1>Hello, world!</h1>
+		<Jumbotron className="sample-jumbotron">
+			<h1>Welcome to the Educative Movie Application!</h1>
 			<p>
-				This is a simple hero unit, a simple jumbotron-style component
-				for calling extra attention to featured content or information.
+				This is a simple application built to demonstrate how React works with React-Bootstrap. This is a Jumbotron component. 
 			</p>
 			<p>
 				<Button variant='primary'>Learn more</Button>

@@ -11,7 +11,7 @@ import {
 const Navigation = () => {
 	return (
 		<Navbar bg='light' expand='lg'>
-			<Navbar.Brand href='#home'>Educative-RB-Tutorial</Navbar.Brand>
+			<Navbar.Brand href='#home'>Educative-Movies-App</Navbar.Brand>
 			<Navbar.Toggle aria-controls='basic-navbar-nav' />
 			<Navbar.Collapse id='basic-navbar-nav'>
 				<Nav className='mr-auto'>
